@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/button_radius"
+        android:text="완료"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/nanumsquare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:shadowColor="#FFFFFF"
+        android:text="새로운 뚜버기님"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="170dp"
+        android:background="#F4B11D"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="얼마나 걸을 수 있나요?"
+            android:fontFamily="@font/nanumsquare_b"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hourView"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:background="#F4B11D"
+                android:gravity="right"
+                android:text="00"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/select_hours"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:entries="@array/hours"/>
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="69dp"
+                android:layout_height="58dp"
+                android:background="#F4B11D"
+                android:gravity="center"
+                android:text="시간"
+                android:fontFamily="@font/nanumsquare"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/minView"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F4B11D"
+                android:gravity="right"
+                android:text="00"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/select_min"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:entries="@array/min" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="69dp"
+                android:layout_height="58dp"
+                android:background="#F4B11D"
+                android:gravity="center"
+                android:text="분"
+                android:fontFamily="@font/nanumsquare"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hello2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hello" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

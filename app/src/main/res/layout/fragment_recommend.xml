@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+
+                <ImageButton
+                    android:id="@+id/iv_walk"
+                    android:layout_width="384dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/w" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="384dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#52000000"
+                    android:gravity="center"
+                    android:text="걷기 좋은 길"
+                    android:fontFamily="@font/nanumsquare_b"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_walk"
+                    app:layout_constraintStart_toStartOf="@+id/iv_walk"
+                    app:layout_constraintTop_toTopOf="@+id/iv_walk" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="top|left"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_walk"
+                    tools:ignore="RtlHardcoded">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/iv_top10"
+                    android:layout_width="384dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/trable" />
+
+                <TextView
+                    android:id="@+id/topView"
+                    android:layout_width="384dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#52000000"
+                    android:gravity="center"
+                    android:text="도시별 여행지 TOP10"
+                    android:fontFamily="@font/nanumsquare_b"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_top10"
+                    app:layout_constraintStart_toStartOf="@+id/iv_top10"
+                    app:layout_constraintTop_toTopOf="@+id/iv_top10" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_top10">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:fillViewport="true">
+
+                        <ImageButton
+                            android:id="@+id/iv_Gangtop10"
+                            android:layout_width="384dp"
+                            android:layout_height="130dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/gang" />
+
+                        <TextView
+                            android:id="@+id/tv_GangtopView"
+                            android:layout_width="384dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="33dp"
+                            android:background="#52000000"
+                            android:gravity="center"
+                            android:text="강릉"
+                            android:textColor="#FFFFFF"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/iv_Gangtop10"
+                            app:layout_constraintStart_toStartOf="@+id/iv_Gangtop10"
+                            app:layout_constraintTop_toTopOf="@+id/iv_Gangtop10" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutGang"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top|left"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_Gangtop10"
+                            tools:ignore="RtlHardcoded">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_Gangtop10"
+                                android:layout_width="350dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/iv_Seotop10"
+                            android:layout_width="384dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/linearLayoutGang"
+                            app:srcCompat="@drawable/seo" />
+
+                        <TextView
+                            android:id="@+id/tv_SeotopView"
+                            android:layout_width="384dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="33dp"
+                            android:background="#52000000"
+                            android:gravity="center"
+                            android:text="서울"
+                            android:textColor="#FFFFFF"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/iv_Seotop10"
+                            app:layout_constraintStart_toStartOf="@+id/iv_Seotop10"
+                            app:layout_constraintTop_toTopOf="@+id/iv_Seotop10" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSeo"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top|left"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_Seotop10"
+                            tools:ignore="RtlHardcoded">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_Seotop10"
+                                android:layout_width="350dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/iv_Yeotop10"
+                            android:layout_width="384dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/linearLayoutSeo"
+                            app:srcCompat="@drawable/yeo" />
+
+                        <TextView
+                            android:id="@+id/tv_YeotopView"
+                            android:layout_width="384dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="33dp"
+                            android:background="#52000000"
+                            android:gravity="center"
+                            android:text="여수"
+                            android:textColor="#FFFFFF"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/iv_Yeotop10"
+                            app:layout_constraintStart_toStartOf="@+id/iv_Yeotop10"
+                            app:layout_constraintTop_toTopOf="@+id/iv_Yeotop10" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutYeo"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top|left"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_Yeotop10"
+                            tools:ignore="RtlHardcoded">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_Yeotop10"
+                                android:layout_width="350dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/iv_Chuntop10"
+                            android:layout_width="384dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/linearLayoutYeo"
+                            app:srcCompat="@drawable/chun" />
+
+                        <TextView
+                            android:id="@+id/tv_ChuntopView"
+                            android:layout_width="384dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="33dp"
+                            android:background="#52000000"
+                            android:gravity="center"
+                            android:text="춘천"
+                            android:textColor="#FFFFFF"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/iv_Chuntop10"
+                            app:layout_constraintStart_toStartOf="@+id/iv_Chuntop10"
+                            app:layout_constraintTop_toTopOf="@+id/iv_Chuntop10" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutChun"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top|left"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_Chuntop10"
+                            tools:ignore="RtlHardcoded">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_Chuntop10"
+                                android:layout_width="350dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/iv_custom"
+                    android:layout_width="384dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+                    app:srcCompat="@drawable/custom"
+                    tools:srcCompat="@drawable/custom" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="384dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#52000000"
+                    android:gravity="center"
+                    android:text="나만을 위한 추천"
+                    android:fontFamily="@font/nanumsquare_b"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_custom"
+                    app:layout_constraintStart_toStartOf="@+id/iv_custom"
+                    app:layout_constraintTop_toTopOf="@+id/iv_custom" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCustom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="top|left"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_custom"
+                    tools:ignore="RtlHardcoded">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_Custom"
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/iv_festival"
+                    android:layout_width="384dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayoutCustom"
+                    app:srcCompat="@drawable/festival"
+                    tools:srcCompat="@drawable/festival" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="384dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#52000000"
+                    android:gravity="center"
+                    android:text="올해의 FESTIVAL"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nanumsquare_b"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_festival"
+                    app:layout_constraintHorizontal_bias="0.928"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/iv_festival" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutFestival"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="top|left"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_festival"
+                    tools:ignore="RtlHardcoded">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_festival"
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

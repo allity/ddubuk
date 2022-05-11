@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "912758891263",
+    "firebase_url": "https://ddubuk-kapal.firebaseio.com",
+    "project_id": "ddubuk-kapal",
+    "storage_bucket": "ddubuk-kapal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912758891263:android:0f93abcad7b3bd736f22ca",
+        "android_client_info": {
+          "package_name": "com.example.ddubuk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912758891263-cg14j7fi81h5obp48m1lbiata1f3uotm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ddubuk",
+            "certificate_hash": "d3849a2ae9435980f9a7df4a0671e0a2bb21662f"
+          }
+        },
+        {
+          "client_id": "912758891263-e20mpg39kirlko05co145j1ai7bb3e4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7DbPX-SPKGemSBTQRVlfrdvknJC1gZRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912758891263-e20mpg39kirlko05co145j1ai7bb3e4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

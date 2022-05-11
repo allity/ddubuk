@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <item
+        android:id="@+id/tab1"
+        app:showAsAction="withText"
+        android:icon="@drawable/home"
+        android:enabled="true"
+        android:checked="true"
+        android:title="홈"
+        />
+    <item
+        android:id="@+id/tab2"
+        app:showAsAction="withText"
+        android:icon="@drawable/recommend"
+        android:enabled="true"
+        android:title="추천"/>
+
+    <item
+        android:id="@+id/tab3"
+        app:showAsAction="withText"
+        android:icon="@drawable/category"
+        android:enabled="true"
+        android:title="카테고리"/>
+
+    <item
+        android:id="@+id/tab4"
+        app:showAsAction="withText"
+        android:icon="@drawable/calender"
+        android:enabled="true"
+        android:title="내 일정"/>
+
+    <item
+        android:id="@+id/tab5"
+        app:showAsAction="withText"
+        android:icon="@drawable/account"
+        android:enabled="true"
+        android:title="계정"/>
+
+</menu>

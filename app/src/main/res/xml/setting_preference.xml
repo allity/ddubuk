@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="알림">
+        <SwitchPreference>
+            android:key="vibrate"
+            android:title="진동 알림"
+            android:summary="진동 울림으로 알림을 받으려면 체크하세요."
+        </SwitchPreference>
+
+        <CheckBoxPreference>
+            android:key="message"
+            android:title="소리 알림"
+            android:summary="소리로 알림을 받으려면 체크하세요."
+        </CheckBoxPreference>
+
+        <ListPreference>
+            android:key="sounds"
+            android:title="알림음"
+            android:summary="알림음을 설정합니다."
+            android:entries="@array/sounds"
+            android:entryValues="@array/sounds"
+            android:dependency="message"
+        </ListPreference>
+    </PreferenceCategory>
+
+    <RingtonePreference>
+        android:key="ringtone"
+        android:title="알림음 설정"
+        android:summary="알림음을 설정합니다."
+        android:dependency="message"
+    </RingtonePreference>
+
+    <MultiSelectListPreference>
+        android:key="favor"
+        android:title="Favorites"
+        android:summary="취향을 수정할 수 있습니다."
+        android:entries="@array/favors"
+        android:entryValues="@array/favors"
+    </MultiSelectListPreference>
+
+</PreferenceScreen>
